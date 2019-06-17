@@ -55,6 +55,10 @@ midpage.style.display = 'flex';
 midpage.style.width = '100%';
 
 
+const mainPage = document.querySelector('.container');
+mainPage.style.backgroundColor = '#F5F5F5';
+mainPage.style.padding = '40px';
+
 
 
 //nav
@@ -66,6 +70,7 @@ navItems[3].textContent = siteContent["nav"]["nav-item-4"];
 navItems[4].textContent = siteContent["nav"]["nav-item-5"];
 navItems[5].textContent = siteContent["nav"]["nav-item-6"];
 
+
 const navBar = document.querySelector('nav');
 const navItemNew1 = document.createElement('a');
 navItemNew1.textContent = "Blog";
@@ -73,9 +78,10 @@ navBar.appendChild(navItemNew1);
 
 const navItemNew2 = document.createElement('a');
 navItemNew2.textContent = "Our Story";
-navBar.appendChild(navItemNew2);
+navBar.prepend(navItemNew2);
 
-let navColor = Array.from(document.querySelector('nav'));
+
+let navColor = Array.from(document.querySelectorAll('a'));
 navColor.forEach( function(elem){
   elem.style.color = 'green';
 });
@@ -131,7 +137,7 @@ contactInfoEmail.textContent = siteContent["contact"]["email"];
 // footer
 let footer = document.querySelector('footer');
 footer.textContent = siteContent["footer"]["copyright"];
-
+footer.style.fontSize = '20px';
 
 
 // document.createElement()
