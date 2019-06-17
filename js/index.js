@@ -38,5 +38,60 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
+const logo = document.querySelector("#logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.src = "img/logo.png";
+logo.alt = 'logo';
+
+const header = document.querySelector('#cta-img');
+header.src = "img/header-img.png";
+header.alt = 'image of bits and bytes';
+
+
+const midpage = document.querySelector('#middle-img');
+midpage.src = "img/mid-page-accent.jpg";
+midpage.alt = 'long image of bits and bytes';
+midpage.style.display = 'flex';
+midpage.style.width = '100%';
+
+
+// const nav = document.createElement("nav");
+// nav.style.color = 'gray';
+// const navtext = document.createTextNode("Services");
+// nav.appendChild(navtext);
+// document.getElementById("nav").appendChild(node);
+
+
+
+const headlineText = document.querySelector('h1');
+headlineText.textContent = "DOM is Awesome";
+
+const buttonText = document.querySelector('button');
+buttonText.textContent = "Get Started";
+
+const buttontext = document.createTextNode("Get Started");
+button.appendChild(buttontext);
+document.getElementByTagName("button").appendChild(node);
+
+
+
+
+
+
+// document.createElement()
+// Example:
+// const img = document.createElement("img");
+// img.src = "https://adorbs-as-a-service.herokuapp.com/api/v1/400w/300h/";
+// servicesHeader.appendChild(img)
+
+// CSS:
+//const someClass = document.querySelector('.some-class');
+// someClass.style.backgroundColor = "gray";
+
+// const mainHeader = document.querySelector('.main-header');
+// mainHeader.style.color = 'red';
+
+
+// const logo = document.querySelector('#logo-img');
+// logo.setAttribute('src', siteContent["nav"]["img-src"])
+// logo.src = "img/logo.png";
