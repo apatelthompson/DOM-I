@@ -55,11 +55,7 @@ midpage.style.display = 'flex';
 midpage.style.width = '100%';
 
 
-// const nav = document.createElement("nav");
-// nav.style.color = 'gray';
-// const navtext = document.createTextNode("Services");
-// nav.appendChild(navtext);
-// document.getElementById("nav").appendChild(node);
+
 
 //nav
 const navItems = Array.from(document.querySelectorAll('header nav a'));
@@ -69,6 +65,21 @@ navItems[2].textContent = siteContent["nav"]["nav-item-3"];
 navItems[3].textContent = siteContent["nav"]["nav-item-4"];
 navItems[4].textContent = siteContent["nav"]["nav-item-5"];
 navItems[5].textContent = siteContent["nav"]["nav-item-6"];
+
+const navBar = document.querySelector('nav');
+const navItemNew1 = document.createElement('a');
+navItemNew1.textContent = "Blog";
+navBar.appendChild(navItemNew1);
+
+const navItemNew2 = document.createElement('a');
+navItemNew2.textContent = "Our Story";
+navBar.appendChild(navItemNew2);
+
+let navColor = Array.from(document.querySelector('nav'));
+navColor.forEach( function(elem){
+  elem.style.color = 'green';
+});
+
 
 //hero section
 const headlineText = document.querySelector('h1');
@@ -102,6 +113,24 @@ let bottomContent3 = document.querySelector('.main-content .bottom-content div:n
 bottomContent3.textContent = siteContent["main-content"]["vision-h4"];
 let bottomContentText3 = document.querySelector('.main-content .bottom-content div:nth-child(3) p');
 bottomContentText3.textContent = siteContent["main-content"]["vision-content"];
+
+// contact
+let contactInfo = document.querySelector('.contact h4');
+contactInfo.textContent = siteContent["contact"]["contact-h4"];
+
+let contactInfoAddress = document.querySelector('.contact p:nth-child(2)');
+contactInfoAddress.textContent = siteContent["contact"]["address"];
+
+let contactInfoPhone = document.querySelector('.contact p:nth-child(3)');
+contactInfoPhone.textContent = siteContent["contact"]["phone"];
+
+let contactInfoEmail = document.querySelector('.contact p:nth-child(4)');
+contactInfoEmail.textContent = siteContent["contact"]["email"];
+
+
+// footer
+let footer = document.querySelector('footer');
+footer.textContent = siteContent["footer"]["copyright"];
 
 
 
