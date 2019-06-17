@@ -61,20 +61,47 @@ midpage.style.width = '100%';
 // nav.appendChild(navtext);
 // document.getElementById("nav").appendChild(node);
 
+//nav
+const navItems = Array.from(document.querySelectorAll('header nav a'));
+navItems[0].textContent = siteContent["nav"]["nav-item-1"];
+navItems[1].textContent = siteContent["nav"]["nav-item-2"];
+navItems[2].textContent = siteContent["nav"]["nav-item-3"];
+navItems[3].textContent = siteContent["nav"]["nav-item-4"];
+navItems[4].textContent = siteContent["nav"]["nav-item-5"];
+navItems[5].textContent = siteContent["nav"]["nav-item-6"];
 
-
+//hero section
 const headlineText = document.querySelector('h1');
 headlineText.textContent = "DOM is Awesome";
-
 const buttonText = document.querySelector('button');
 buttonText.textContent = "Get Started";
 
-const buttontext = document.createTextNode("Get Started");
-button.appendChild(buttontext);
-document.getElementByTagName("button").appendChild(node);
+//main container
+let topContent1 = document.querySelector('.main-content .top-content div:nth-child(1) h4');
+topContent1.textContent = siteContent["main-content"]["features-h4"];
+let topContentText1 = document.querySelector('.main-content .top-content div:nth-child(1) p');
+topContentText1.textContent = siteContent["main-content"]["features-content"];
 
+let topContent2 = document.querySelector('.main-content .top-content div:nth-child(2) h4');
+topContent2.textContent = siteContent["main-content"]["about-h4"];
+let topContentText2 = document.querySelector('.main-content .top-content div:nth-child(2) p');
+topContentText2.textContent = siteContent["main-content"]["about-content"];
 
+//bottom container
+let bottomContent1 = document.querySelector('.main-content .bottom-content div:nth-child(1) h4');
+bottomContent1.textContent = siteContent["main-content"]["services-h4"];
+let bottomContentText1 = document.querySelector('.main-content .bottom-content div:nth-child(1) p');
+bottomContentText1.textContent = siteContent["main-content"]["services-content"];
 
+let bottomContent2 = document.querySelector('.main-content .bottom-content div:nth-child(2) h4');
+bottomContent2.textContent = siteContent["main-content"]["product-h4"];
+let bottomContentText2 = document.querySelector('.main-content .bottom-content div:nth-child(2) p');
+bottomContentText2.textContent = siteContent["main-content"]["product-content"];
+
+let bottomContent3 = document.querySelector('.main-content .bottom-content div:nth-child(3) h4');
+bottomContent3.textContent = siteContent["main-content"]["vision-h4"];
+let bottomContentText3 = document.querySelector('.main-content .bottom-content div:nth-child(3) p');
+bottomContentText3.textContent = siteContent["main-content"]["vision-content"];
 
 
 
