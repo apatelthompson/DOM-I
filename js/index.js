@@ -82,7 +82,7 @@ navBar.prepend(navItemNew2);
 
 let navColor = Array.from(document.querySelectorAll("a"));
 navColor.forEach(function(elem) {
-  elem.style.color = "green";
+  elem.style.color = "dodgerblue";
   elem.style.fontWeight = "bold";
   elem.style.fontSize = "1.1rem";
 });
@@ -100,6 +100,7 @@ buttonStyle.style.color = "white";
 buttonStyle.style.border = "none";
 
 //main container
+
 let topContent1 = document.querySelector(
   ".main-content .top-content div:nth-child(1) h4"
 );
@@ -147,9 +148,20 @@ let bottomContentText3 = document.querySelector(
 );
 bottomContentText3.textContent = siteContent["main-content"]["vision-content"];
 
+let headers = document.querySelectorAll("h4");
+headers.forEach(function(elem) {
+  elem.style.color = "dodgerblue";
+  elem.style.fontWeight = "bold";
+  elem.style.fontSize = "1.2rem";
+  elem.style.display = "flex";
+  elem.style.justifyContent = "center";
+});
+
 // contact
 let contactInfo = document.querySelector(".contact h4");
 contactInfo.textContent = siteContent["contact"]["contact-h4"];
+contactInfo.style.display = "flex";
+contactInfo.style.justifyContent = "center";
 
 let contactInfoAddress = document.querySelector(".contact p:nth-child(2)");
 contactInfoAddress.textContent = siteContent["contact"]["address"];
